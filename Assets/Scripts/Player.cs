@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
 {
     [SerializeField] float movementSpeed = 10f;
     [SerializeField] float padding = 1f;
+    [SerializeField] GameObject laserPrefab = null;
+    [SerializeField] float projectileSpeed = 20f;
 
     float xMin;
     float xMax;
@@ -18,6 +20,21 @@ public class Player : MonoBehaviour
         SetUpMoveBoundaries();
     }
 
+    void Update()
+    {
+        Move();
+        Fire();
+    }
+
+    private void Fire()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            GameObject laser = Instantiate(laserPrefab, transform.position, Quaternion.identity) as GameObject;
+            laser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, projectileSpeed);
+        }
+    }
+
     private void SetUpMoveBoundaries()
     {
         Camera gameCamera = Camera.main;
@@ -25,11 +42,6 @@ public class Player : MonoBehaviour
         xMax = gameCamera.ViewportToWorldPoint(new Vector3(1, 0, 0)).x - padding;
         yMin = gameCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).y + padding;
         yMax = gameCamera.ViewportToWorldPoint(new Vector3(0, 1, 0)).y - padding;
-    }
-
-    void Update()
-    {
-        Move();
     }
 
     private void Move()
