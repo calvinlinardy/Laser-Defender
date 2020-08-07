@@ -673,6 +673,11 @@ PrefabInstance:
       propertyPath: projectileFiringPeriod
       value: 0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 5634116467063444747, guid: 4bbfb8d52cbefb242b4f92eef84a40fb,
+        type: 3}
+      propertyPath: movementSpeed
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5634116467063444750, guid: 4bbfb8d52cbefb242b4f92eef84a40fb,
         type: 3}
       propertyPath: m_Name
@@ -702,6 +707,11 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[2]
       value: 
       objectReference: {fileID: 3188204988112073620}
+    - target: {fileID: 3034129696968081287, guid: 0c66536b55905544ab33d0b42fcb581e,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5650302852977322425, guid: 0c66536b55905544ab33d0b42fcb581e,
         type: 3}
       propertyPath: m_LocalPosition.x
