@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3034129696968081287}
   - component: {fileID: -3224920202377419889}
   - component: {fileID: 8171583232992084389}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Dray
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,6 +109,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  shotCounter: 0
+  minTimeBetweenShots: 0.2
+  maxTimeBetweenShots: 3
+  projectile: {fileID: 5451174568990493901, guid: f9e0d45fa4505c84ba48313690f24ab1,
+    type: 3}
+  projectileSpeed: 8
 --- !u!58 &8171583232992084389
 CircleCollider2D:
   m_ObjectHideFlags: 0
