@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5650302852977322425}
   - component: {fileID: 5650302852977322424}
   - component: {fileID: 3034129696968081287}
+  - component: {fileID: -3224920202377419889}
+  - component: {fileID: 8171583232992084389}
   m_Layer: 0
   m_Name: Dray
   m_TagString: Untagged
@@ -94,3 +96,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 168f698629663c3449d6ca37ae3946cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-3224920202377419889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5650302852977322427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d0f93d95076c274ebf55070a58eb93a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+--- !u!58 &8171583232992084389
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5650302852977322427}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.42
