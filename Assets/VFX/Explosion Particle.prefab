@@ -40,7 +40,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7041404020800304280}
   serializedVersion: 6
-  lengthInSec: 0.2
+  lengthInSec: 0.15
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -225,22 +225,22 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.98668146, g: 1, b: 0.9858491, a: 0.7254902}
-        key1: {r: 0.5566038, g: 0, b: 0, a: 0.8784314}
-        key2: {r: 0.45437646, g: 0, b: 0.735849, a: 0}
-        key3: {r: 0.023584902, g: 1, b: 1, a: 0}
+        key0: {r: 0.05724919, g: 1, b: 0, a: 0.3647059}
+        key1: {r: 0.036893554, g: 0.6886792, b: 0, a: 0.54901963}
+        key2: {r: 0.44825482, g: 0.6886792, b: 0, a: 0}
+        key3: {r: 0.7228012, g: 1, b: 0.5990566, a: 0}
         key4: {r: 0.7264151, g: 0, b: 0.55779994, a: 0}
         key5: {r: 0.10542622, g: 0, b: 0.62352943, a: 0}
-        key6: {r: 0.098039225, g: 0.14901961, b: 0.49411768, a: 0}
-        key7: {r: 0, g: 0, b: 0, a: 0}
+        key6: {r: 0.98564017, g: 1, b: 0, a: 0}
+        key7: {r: 1, g: 1, b: 1, a: 0}
         ctime0: 0
-        ctime1: 10216
-        ctime2: 20239
-        ctime3: 31611
+        ctime1: 13493
+        ctime2: 37201
+        ctime3: 65535
         ctime4: 43947
         ctime5: 55705
-        ctime6: 60909
-        ctime7: 0
+        ctime6: 54934
+        ctime7: 60909
         atime0: 0
         atime1: 65535
         atime2: 0
@@ -250,7 +250,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
-        m_NumColorKeys: 6
+        m_NumColorKeys: 4
         m_NumAlphaKeys: 2
       minGradient:
         serializedVersion: 2
@@ -659,8 +659,8 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 0
-    angle: 25
+    type: 4
+    angle: 12.2
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
@@ -746,7 +746,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 0.1
+      value: 0.56
       mode: 0
       spread: 0
       speed:
@@ -865,7 +865,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 130
+      scalar: 200
       minScalar: 10
       maxCurve:
         serializedVersion: 2

@@ -112,12 +112,16 @@ MonoBehaviour:
   shotCounter: 0
   minTimeBetweenShots: 0.2
   maxTimeBetweenShots: 3
-  projectile: {fileID: 5451174568990493901, guid: f9e0d45fa4505c84ba48313690f24ab1,
-    type: 3}
-  projectileSpeed: 8
   deathVFX: {fileID: 7041404020800304280, guid: 2ddbc866d1c0ba349bdfbf63e84dc3d5,
     type: 3}
   durationOfExplosion: 1
+  deathSFX: {fileID: 8300000, guid: 4ac5b80a474724e4697d4045a7dc5391, type: 3}
+  deathSFXVolume: 0.5
+  projectile: {fileID: 5451174568990493901, guid: f9e0d45fa4505c84ba48313690f24ab1,
+    type: 3}
+  projectileSpeed: 8
+  shootSFX: {fileID: 8300000, guid: 5ca30c26c0f42284a86e5eba60c08275, type: 3}
+  shootSFXVolume: 0.4
 --- !u!58 &7181349234171916691
 CircleCollider2D:
   m_ObjectHideFlags: 0
