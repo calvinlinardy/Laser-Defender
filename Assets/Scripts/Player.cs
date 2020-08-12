@@ -21,7 +21,6 @@ public class Player : MonoBehaviour
     [SerializeField] [Range(0, 1)] float shootSFXVolume = 0.25f;
 
     Coroutine firingCoroutine;
-    //asdfasdfas
 
     float xMin;
     float xMax;
