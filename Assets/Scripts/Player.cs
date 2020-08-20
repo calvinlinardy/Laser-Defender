@@ -21,6 +21,10 @@ public class Player : MonoBehaviour
     [SerializeField] AudioClip shootSFX = null;
     [SerializeField] [Range(0, 1)] float shootSFXVolume = 0.25f;
 
+    //cached reference
+    Level level;
+
+    //state
     Coroutine firingCoroutine;
 
     float xMin;
@@ -30,6 +34,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
+        level =  FindObjectOfType<Level>();
         SetUpMoveBoundaries();
     }
 
@@ -61,7 +66,8 @@ public class Player : MonoBehaviour
 
     private void Die()
     {
-        SceneManager.LoadScene("Game Over");
+        level.LoadGameOver();
+        Destroy(gameObject);
         AudioSource.PlayClipAtPoint(deathSFX, Camera.main.transform.position, deathSFXVolume);
     }
 
