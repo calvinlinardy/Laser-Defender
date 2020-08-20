@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -60,7 +61,7 @@ public class Player : MonoBehaviour
 
     private void Die()
     {
-        Destroy(gameObject);
+        SceneManager.LoadScene("Game Over");
         AudioSource.PlayClipAtPoint(deathSFX, Camera.main.transform.position, deathSFXVolume);
     }
 
