@@ -34,7 +34,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        level =  FindObjectOfType<Level>();
+        level = FindObjectOfType<Level>();
         SetUpMoveBoundaries();
     }
 
