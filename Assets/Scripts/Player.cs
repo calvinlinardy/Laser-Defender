@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -10,9 +11,10 @@ public class Player : MonoBehaviour
     [Header("Player")]
     [SerializeField] float movementSpeed = 10f;
     [SerializeField] float padding = 1f;
-    [SerializeField] int health = 200;
+    [SerializeField] int health = 5;
     [SerializeField] AudioClip deathSFX = null;
     [SerializeField] [Range(0, 1)] float deathSFXVolume = 0.7f;
+    [SerializeField] Image[] hearts = null;
 
     [Header("Projectile")]
     [SerializeField] GameObject laserPrefab = null;
@@ -42,6 +44,22 @@ public class Player : MonoBehaviour
     {
         Move();
         Fire();
+        HeartsMinus();
+    }
+
+    private void HeartsMinus()
+    {
+        for (int i = 0; i < hearts.Length; i++)
+        {
+            if (i < health)
+            {
+                hearts[i].enabled = true;
+            }
+            else
+            {
+                hearts[i].enabled = false;
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -66,6 +84,7 @@ public class Player : MonoBehaviour
 
     private void Die()
     {
+        hearts[0].enabled = false;
         level.LoadGameOver();
         Destroy(gameObject);
         AudioSource.PlayClipAtPoint(deathSFX, Camera.main.transform.position, deathSFXVolume);
